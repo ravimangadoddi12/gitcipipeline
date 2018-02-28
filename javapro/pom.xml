@@ -7,7 +7,18 @@
     <name>AIO - SDK 3.0</name>
     <description>All-In-One (AIO) project for SDK 3.0</description>
     <packaging>pom</packaging>
-
+ <distributionManagement>
+    <repository>
+         <id>Release</id>
+         <name>release</name>
+         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+         <id>Snapshot</id>
+         <name>sanpshot</name>
+         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
     <properties>
         <!-- Alfresco Maven Plugin version to use -->
         <alfresco.sdk.version>3.0.1</alfresco.sdk.version>
@@ -414,16 +425,4 @@
     <module>javapro-share-jar</module>
     <module>integration-tests</module>
   </modules>
-    <distributionManagement>
-    <repository>
-         <id>Release</id>
-         <name>release</name>
-         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/releases/</url>
-    </repository>
-    <snapshotRepository>
-         <id>Snapshot</id>
-         <name>sanpshot</name>
-         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:8080/nexus-2.14.5-02/content/repositories/snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
 </project>
