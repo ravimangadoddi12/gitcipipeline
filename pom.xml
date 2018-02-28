@@ -330,4 +330,16 @@
             </dependencyManagement>
         </profile>
     </profiles>
+    <distributionManagement>
+    <repository>
+         <id>releases</id>
+         <name>releases</name>
+         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:9090/nexus-2.14.5-02/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+         <id>snapshot</id>
+         <name>snapshot</name>
+         <url>http://ec2-54-237-208-83.compute-1.amazonaws.com:9090/nexus-2.14.5-02/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
